@@ -1,0 +1,74 @@
+body {
+  background-color: #282c34;
+}
+
+.timer-container {
+  color: #ccc;
+  display: flex;
+  letter-spacing: 14px;
+  font-size: 90px;
+  padding-left: 33px;
+}
+
+.timer-content {
+  font-size: 100px;
+  margin: 0;
+}
+
+@media screen and (max-width: 425px) {
+  .controls-container button {
+    font-size: 10px !important;
+  }
+
+  .timerHeading,
+  .timer-container,
+  .timer-content {
+    font-size: 30px;
+  }
+}
+
+.controls-container button {
+  margin: 15px;
+  border: none;
+  background-color: #e5ad3d;
+  padding: 3px 12px;
+  font-size: 30px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.timerHeading,
+.TimeElapsed {
+  text-align: center;
+}
+
+.timerHeading {
+  color: white;
+  font-size: 50px;
+}
+
+.TimeElapsed {
+  color: white;
+  font-size: 20px;
+}
+
+.center {
+  text-align: center;
+  list-style-position: inside;
+}
+
+.timer-container1 {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 860px) {
+  .timer-container1 {
+    flex-direction: row;
+  }
+}
